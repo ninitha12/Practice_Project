@@ -51,5 +51,4 @@ public class Page {
 		driver.quit();
 
 	}
-
-}
+	}}
