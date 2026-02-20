@@ -32,21 +32,21 @@ public class Page {
 			//products
 			List<WebElement> prods = driver.findElements(By.xpath("//table[@id='productTable']/tbody/tr/td[2]"));
 			
-              for (WebElement pr : prods) {
-            	  //checking product
-              if (pr.getText().equals(productName)) {
-              driver.findElement(By.xpath("//tbody//td[contains(.,'"+productName+"')]/following-sibling::td/input[@type='checkbox']")).click();
-              Thread.sleep(1000);
-            //tbody//td[contains(.,'"+productName+"')]/following-sibling::td/input[@type='checkbox']
-					prprice = driver.findElement(By.xpath("//td[.='"+productName+"']/following-sibling::td[1]")).getText();
-					b = true;
-					break;
-				}
-			}
-			if (b)
-				break;
-		}
-		System.out.println("Price of " + productName + " is= " + prprice);
+//              for (WebElement pr : prods) {
+//            	  //checking product
+//              if (pr.getText().equals(productName)) {
+//              driver.findElement(By.xpath("//tbody//td[contains(.,'"+productName+"')]/following-sibling::td/input[@type='checkbox']")).click();
+//              Thread.sleep(1000);
+//            //tbody//td[contains(.,'"+productName+"')]/following-sibling::td/input[@type='checkbox']
+//					prprice = driver.findElement(By.xpath("//td[.='"+productName+"']/following-sibling::td[1]")).getText();
+//					b = true;
+//					break;
+//				}
+//			}
+//			if (b)
+//				break;
+//		}
+//		System.out.println("Price of " + productName + " is= " + prprice);
 
 		driver.quit();
 
