@@ -22,7 +22,6 @@ public static void main(String[] args) throws InterruptedException {
 	Thread.sleep(3000);
 	driver.quit();
 	System.out.println("hi");
-	System.out.println("hi");
 
 }
 }
