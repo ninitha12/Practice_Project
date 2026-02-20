@@ -47,7 +47,7 @@ public class Page {
 //				break;
 //		}
 //		System.out.println("Price of " + productName + " is= " + prprice);
-
+System.out.println("hi");
 		driver.quit();
 
 	}

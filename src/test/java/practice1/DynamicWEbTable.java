@@ -21,5 +21,6 @@ public static void main(String[] args) throws InterruptedException {
 	System.out.println("the "+name+" percent is: "+cpu);
 	Thread.sleep(3000);
 	driver.quit();
+	System.out.println("hi");
 }
 }
